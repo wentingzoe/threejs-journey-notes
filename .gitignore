@@ -1,0 +1,11 @@
+# Dependency caches
+node_modules/
+**/node_modules/
+
+# Builds
+dist/
+**/dist/
+
+# OS / editor noise
+.DS_Store
+.vscode/
