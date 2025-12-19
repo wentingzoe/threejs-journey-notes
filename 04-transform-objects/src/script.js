@@ -58,9 +58,9 @@ group.add(cube3)
 // // mesh.rotation.y = Math.PI * 0.25
 // mesh.rotation.set(Math.PI * 0.25, Math.PI * 0.25, 0)
 
-// /* Axes Helper */
-// const axesHelper = new THREE.AxesHelper()
-// scene.add(axesHelper)
+/* Axes Helper */
+const axesHelper = new THREE.AxesHelper()
+scene.add(axesHelper)
 
 
 /**
@@ -80,7 +80,7 @@ camera.position.z = 3
 // camera.position.y = 1 
 scene.add(camera)
 /* Make the camera look at a specific point */
-// camera.lookAt(new THREE.Vector3(2, 0, 0))
+// camera.lookAt(new THREE.Vector3(0, 0, 0))
 // camera.lookAt(mesh.position)
 
 /*
