@@ -1,4 +1,4 @@
-# Three.js Journey – 04 Transform Objects
+# 04. Transform Objects - Position, Scale, Rotation, Groups
 
 Quick notes from the “Transform Objects” lesson so you remember what changed and why.
 

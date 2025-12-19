@@ -1,4 +1,4 @@
-# Cameras — Perspective vs Orthographic (Lesson 06)
+# 06. Cameras - Perspective vs Orthographic
 
 You’ll hear about many camera types, but you’ll mostly use two: `PerspectiveCamera` for realistic depth and `OrthographicCamera` for flat, UI-like views. Know the others exist (`ArrayCamera`, `StereoCamera`, `CubeCamera`) for split screens, VR-ish effects, or environment captures.
 

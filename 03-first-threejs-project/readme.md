@@ -1,4 +1,4 @@
-# Three.js Journey – 03 First Project (Exercise)
+# 03. First Project - Minimal Three.js Setup
 
 Quick reminder of how to spin up the exercise and what matters in the initial Three.js setup.
 

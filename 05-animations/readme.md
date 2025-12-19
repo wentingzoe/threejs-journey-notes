@@ -1,4 +1,4 @@
-# Animations — Stop-Motion Rendering (Lesson 05)
+# 05. Animations - Stop-Motion Rendering
 
 Three.js animation works like a stop-motion flipbook: update values, render the frame, then repeat. Because devices run at different refresh rates, every animation should be frame-rate independent.
 
