@@ -1,8 +1,15 @@
 import * as THREE from 'three'
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 
-/**
- * Base
- */
+/** Cursor */
+const cursor = {
+    x: 0,
+    y: 0
+}
+window.addEventListener('mousemove', (event) => {
+    cursor.x =event.clientX /sizes.width - 0.5 // to get values between -0.5 and 0.5
+    cursor.y =-(event.clientY / sizes.height - 0.5)
+})
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 
@@ -23,12 +30,26 @@ const mesh = new THREE.Mesh(
 scene.add(mesh)
 
 // Camera
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
-camera.position.x = 2
-camera.position.y = 2
-camera.position.z = 2
+/* Perspective Camera */
+const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+// 75 is the field of view in degrees, smaller values zoom in, larger values zoom out
+// Aspect ratio is width divided by height
+// Near and far clipping planes define the range of distances from the camera at which objects are rendered
+
+/* Orthographic Camera */
+// const aspectRatio = sizes.width / sizes.height
+// const camera = new THREE.OrthographicCamera(-1 * aspectRatio, 1 * aspectRatio, 1, -1, 0.1, 100)
+
+
+// camera.position.x = 2
+// camera.position.y = 2
+camera.position.z = 3
 camera.lookAt(mesh.position)
 scene.add(camera)
+
+// Controls
+const controls = new OrbitControls(camera, canvas)
+controls.enableDamping = true
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({
@@ -44,10 +65,21 @@ const tick = () =>
     const elapsedTime = clock.getElapsedTime()
 
     // Update objects
-    mesh.rotation.y = elapsedTime;
+    // mesh.rotation.y = elapsedTime;
 
+
+    // Update camera
+    // camera.position.x = Math.sin(cursor.x * Math.PI * 2) * 3
+    // camera.position.z = Math.cos(cursor.x * Math.PI * 2) * 3
+    // camera.position.y = cursor.y * 10
+    // camera.lookAt(mesh.position)
+    //* Device Orientation Controls -- no IOS*/
+    //* Orbit Controls -- need to import */
+
+    // Update controls
+    controls.update()
     // Render
-    renderer.render(scene, camera)
+    renderer.render(scene, camera) 
 
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)
