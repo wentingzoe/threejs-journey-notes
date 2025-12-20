@@ -3,13 +3,13 @@
 Notes collected while following [Bruno Simon's Three.js Journey](https://threejs-journey.com/) — building interactive WebGL experiences from the basics (scenes, cameras, meshes) through transforms, materials, lighting, animation, and production-ready workflows.
 
 ## Contents
-| Lesson | Summary | Notes |
+| Lesson | Folder | Summary |
 | --- | --- | --- |
-| 03 | First Project - Minimal Three.js Setup | [03-first-threejs-project/readme.md](03-first-threejs-project/readme.md) |
-| 04 | Transform Objects - Position, Scale, Rotation, Groups | [04-transform-objects/readme.md](04-transform-objects/readme.md) |
-| 05 | Animations - Stop-Motion Rendering | [05-animations/readme.md](05-animations/readme.md) |
-| 06 | Cameras - Perspective vs Orthographic | [06-cameras/readme.md](06-cameras/readme.md) |
-| 07 | Fullscreen and Resizing - Viewport-Safe Canvas | [07-fullscreen-and-resizing/readme.md](07-fullscreen-and-resizing/readme.md) |
+| 03 | [03-first-threejs-project](03-first-threejs-project/) | First Project - Minimal Three.js Setup |
+| 04 | [04-transform-objects](04-transform-objects/) | Transform Objects - Position, Scale, Rotation, Groups |
+| 05 | [05-animations](05-animations/) | Animations - Stop-Motion Rendering |
+| 06 | [06-cameras](06-cameras/) | Cameras - Perspective vs Orthographic |
+| 07 | [07-fullscreen-and-resizing](07-fullscreen-and-resizing/) | Fullscreen and Resizing - Viewport-Safe Canvas |
 
 ## How to use
 - Jump into a lesson folder, read its `readme.md`, then run the listed scripts to try the examples.
