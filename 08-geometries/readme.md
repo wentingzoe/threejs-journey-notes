@@ -1,4 +1,4 @@
-# Three.js Journey — Geometries
+# 0.8 Geometries
 ## Summary
 
 - Geometries hold a mesh’s shape data (vertices, faces, plus extras like UVs and normals) and every built-in Three.js shape ultimately extends `BufferGeometry`.
