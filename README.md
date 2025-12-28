@@ -10,6 +10,8 @@ Notes collected while following [Bruno Simon's Three.js Journey](https://threejs
 | 05 | [05-animations](05-animations/) | Animations - Stop-Motion Rendering |
 | 06 | [06-cameras](06-cameras/) | Cameras - Perspective vs Orthographic |
 | 07 | [07-fullscreen-and-resizing](07-fullscreen-and-resizing/) | Fullscreen and Resizing - Viewport-Safe Canvas |
+| 08 | [08-geometries](08-geometries/) | Geometries - BufferGeometry, segments, custom shapes |
+| 09 | [09-debug-ui](09-debug-ui/) | Debug UI - lil-gui, live tweaking, geometry disposal |
 
 ## How to use
 - Jump into a lesson folder, read its `readme.md`, then run the listed scripts to try the examples.
