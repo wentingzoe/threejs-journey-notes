@@ -1,4 +1,11 @@
-# Three.js Journey — Geometries
+# 0.8 Geometries
+## Summary
+
+- Geometries hold a mesh’s shape data (vertices, faces, plus extras like UVs and normals) and every built-in Three.js shape ultimately extends `BufferGeometry`.
+- Segment counts drive visual smoothness versus performance; wireframes help see triangle density.
+- Custom shapes come from `BufferGeometry` + typed arrays, and indexing lets you reuse vertices efficiently.
+
+---
 
 ## 1) What a geometry really is
 
@@ -8,7 +15,7 @@
 - Geometries aren’t only for meshes—later you can use vertices as **particles**.
 - Vertices can store more than position (e.g., **UVs** for textures, **normals** for lighting).
 
----
+
 
 ## 2) Built-in geometries = mostly “ready-made shapes”
 
@@ -16,7 +23,7 @@
 - They all inherit from **`BufferGeometry`**, which has helpful transform methods like `translate()`, `rotateX()`, `normalize()`, etc.
 - You don’t need to memorize every constructor—just know they exist and check docs when needed.
 
----
+
 
 ## 3) Geometry parameters matter (especially segments)
 
@@ -35,7 +42,7 @@ Example where segments matter a lot:
 
 - `SphereGeometry(1, 32, 32)` looks smooth because it has enough subdivisions.
 
----
+
 
 ## 4) Making your own shape: `BufferGeometry`
 
@@ -60,7 +67,7 @@ Random triangles example:
 - each vertex = 3 floats
 - total floats = `count * 3 * 3`
 
----
+
 
 ## 5) Optimization note: indexing
 
